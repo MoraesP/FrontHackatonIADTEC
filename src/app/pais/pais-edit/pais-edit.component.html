@@ -1,0 +1,28 @@
+<h5>Novo País</h5>
+<div>
+  <form
+    name="form"
+    #f="ngForm"
+    (ngSubmit)="f.form.valid && onSubmit()"
+    novalidate
+  >
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="pais.nome"
+        [ngModelOptions]="{ standalone: true }"
+        placeholder="Nome"
+        id="nome"
+        #nome="ngModel"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary">Salvar</button>
+    </div>
+  </form>
+  <br />
+  <button class="btn btn-primary">Voltar</button>
+</div>
+<div></div>

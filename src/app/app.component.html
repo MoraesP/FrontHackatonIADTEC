@@ -1,0 +1,17 @@
+<div class="navbar-fixed">
+  <nav class="navegador">
+    <div class="nav-wrapper">
+      <a routerLink="" class="brand-logo right mdi mdi-triforce">YZY</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li routerLinkActive="active"><a [routerLink]="['/cliente']">Cliente</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/pais']">Paises</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+        
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
